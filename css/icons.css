@@ -1,0 +1,100 @@
+[class*=" icon-"]::before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*=" icon-"]::before {
+  display: block;
+}
+
+.icon-search:before {
+  content: "\e900";
+}
+
+.icon-g-pay:before {
+  content: "\e901";
+}
+
+.icon-a-pay:before {
+  content: "\e902";
+}
+
+.icon-paypal:before {
+  content: "\e903";
+}
+
+.icon-mastercard:before {
+  content: "\e904";
+}
+
+.icon-visa:before {
+  content: "\e905";
+}
+
+.icon-github:before {
+  content: "\e906";
+}
+
+.icon-instagram:before {
+  content: "\e907";
+}
+
+.icon-facebook:before {
+  content: "\e908";
+}
+
+.icon-twitter:before {
+  content: "\e909";
+}
+
+.icon-email:before {
+  content: "\e90a";
+}
+
+.icon-arrow-right:before {
+  content: "\e90b";
+}
+
+.icon-arrow-left:before {
+  content: "\e90c";
+}
+
+.icon-mark:before {
+  content: "\e90d";
+}
+
+.icon-star:before {
+  content: "\e90e";
+}
+
+.icon-calvin-klein:before {
+  content: "\e90f";
+}
+
+.icon-gucci:before {
+  content: "\e911";
+}
+
+.icon-zara:before {
+  content: "\e912";
+}
+
+.icon-versace:before {
+  content: "\e913";
+}
+
+.icon-top-star:before {
+  content: "\e914";
+}
+
+.icon-account:before {
+  content: "\e915";
+}
+
+.icon-basket:before {
+  content: "\e916";
+}/*# sourceMappingURL=icons.css.map */
