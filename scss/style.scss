@@ -77,6 +77,12 @@ body {
     &-link:last-child {
       margin-left: 14px;
     }
+    &-link {
+      transition: $transition;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
     &-icon {
       width: 24px;
       height: 24px;
@@ -98,6 +104,20 @@ body {
   &__link {
     font-size: 16px;
     color: $black;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $black;
+      height: 1px;
+      width: 0;
+      left: 0;
+      bottom: 0;
+      transition: 0.3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
   }
 }
 
@@ -106,7 +126,7 @@ body {
   align-items: center;
   border-radius: 62px;
   background: $lightGray;
-  flex-basis: 565px;
+  max-width: 565px;
   &-input {
     width: 525px;
     font-size: 16px;
@@ -158,20 +178,25 @@ body {
       border-radius: 62px;
       padding: 15px 67px;
       background: $black;
+      transition: $transition;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
   &__info {
     display: flex;
     padding-bottom: 116px;
+    align-items: center;
+    max-width: 596px;
     &-item {
-      margin-right: 32px;
-      &::after {
-        content: "";
-        display: block;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        width: 74px;
-        height: 0px;
-        transform: rotate(-90deg);
+      flex: 1;
+      text-align: center;
+      // margin-right: 32px;
+      padding: 0 16px;
+      &:not(:last-child) {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        // transform: rotate(-90deg);
       }
     }
     &-num {
@@ -201,11 +226,17 @@ body {
     fill: $white;
     max-width: 100%;
     height: auto;
+    transition: $transition;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
 .new {
   padding: 72px 15px 64px;
+}
+.product {
   &__content {
     text-align: center;
   }
@@ -229,6 +260,10 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+    transition: $transition;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   &__text {
     font-family: "Satoshi-Bold";
@@ -279,8 +314,16 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 62px;
     padding: 15px 80px;
-    
+    transition: $transition;
+    &:hover {
+      color: $white;
+      background: $black;
+    }
   }
+}
+
+.bestseller {
+  padding: 64px 15px 80px;
 }
 
 .footer {
@@ -384,4 +427,16 @@ body {
         0 4px 9px 0 rgba(183, 183, 183, 0.08);
     }
   }
+}
+
+@media (max-width: 1190px) {
+  .search__box {
+    max-width: 460px;
+    &-input {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 830px) {
 }
