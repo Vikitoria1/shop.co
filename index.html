@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop.co</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -11,7 +12,12 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="logo" href="index.html">SHOP.CO</a>
+          <div class="header__content">
+            <a class="logo header__logo" href="index.html">SHOP.CO</a>
+            <div class="header__burger">
+              <span></span>
+            </div>
+          </div>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -340,7 +346,11 @@
               <li class="browse__item">
                 <a class="browse__link" href="#">
                   <h3 class="browse__text">Casual</h3>
-                  <img src="images/browse-1.png" alt="picture" />
+                  <img
+                    class="browse__img"
+                    src="images/browse-1.png"
+                    alt="picture"
+                  />
                 </a>
               </li>
               <li class="browse__item">
@@ -356,13 +366,21 @@
               <li class="browse__item">
                 <a class="browse__link" href="#">
                   <h3 class="browse__text">Party</h3>
-                  <img src="images/browse-3.png" alt="picture" />
+                  <img
+                    class="browse__img"
+                    src="images/browse-3.png"
+                    alt="picture"
+                  />
                 </a>
               </li>
               <li class="browse__item">
                 <a class="browse__link" href="#">
                   <h3 class="browse__text">Gym</h3>
-                  <img src="images/browse-4.png" alt="picture" />
+                  <img
+                    class="browse__img"
+                    src="images/browse-4.png"
+                    alt="picture"
+                  />
                 </a>
               </li>
             </ul>
@@ -374,16 +392,24 @@
           <div class="reviews__content">
             <h2 class="reviews__title">OUR HAPPY CUSTOMERS</h2>
             <div class="reviews__arrow">
-              <svg class="reviews__arrow-icon" width="22" height="22">
+              <svg
+                class="reviews__arrow-icon reviews__arrow-icon--left"
+                width="22"
+                height="22"
+              >
                 <use href="/images/sprite.svg#icon-arrow-left"></use>
               </svg>
-              <svg class="reviews__arrow-icon" width="22" height="22">
+              <svg
+                class="reviews__arrow-icon reviews__arrow-icon--right"
+                width="22"
+                height="22"
+              >
                 <use href="/images/sprite.svg#icon-arrow-right"></use>
               </svg>
             </div>
           </div>
           <ul class="reviews__list">
-            <!-- <li class="reviews__item">
+            <li class="reviews__item">
               <svg class="reviews__star" width="22" height="22">
                 <use href="/images/sprite.svg#icon-star"></use>
               </svg>
@@ -438,7 +464,7 @@
                 received from Shop.co. From casual wear to elegant dresses,
                 every piece I've bought has exceeded my expectations.”
               </p>
-            </li> -->
+            </li>
             <li class="reviews__item">
               <svg class="reviews__star" width="22" height="22">
                 <use href="/images/sprite.svg#icon-star"></use>
@@ -529,6 +555,28 @@
           </ul>
         </div>
       </section>
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__content">
+            <h2 class="subscribe__title">
+              STAY UPTO DATE ABOUT OUR LATEST OFFERS
+            </h2>
+            <form class="subscribe__form" action="#">
+              <svg class="subscribe__icon" width="22" height="16">
+                <use href="/images/sprite.svg#icon-email"></use>
+              </svg>
+              <input
+                class="subscribe__input"
+                type="email"
+                placeholder="Enter your email address"
+              />
+              <button class="subscribe__btn" type="submit">
+                Subscribe to Newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -570,66 +618,70 @@
               </li>
             </ul>
           </div>
-          <ul class="footer__content">
-            <li class="footer__content-title">Company</li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">About</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Features </a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Works </a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Career</a>
-            </li>
-          </ul>
-          <ul class="footer__content">
-            <li class="footer__content-title">Help</li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Customer Support</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Delivery Details</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Terms & Conditions</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Privacy Policy</a>
-            </li>
-          </ul>
-          <ul class="footer__content">
-            <li class="footer__content-title">FAQ</li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Account</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Manage Deliveries</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Orders</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Payments</a>
-            </li>
-          </ul>
-          <ul class="footer__content">
-            <li class="footer__content-title">Resources</li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Free eBooks</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Development Tutorial</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">How to - Blog</a>
-            </li>
-            <li class="footer__content-item">
-              <a class="footer__content-link" href="#">Youtube Playlist</a>
-            </li>
-          </ul>
+          <div class="footer__content">
+            <ul class="footer__content-list">
+              <li class="footer__content-title">Company</li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">About</a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Features </a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Works </a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Career</a>
+              </li>
+            </ul>
+            <ul class="footer__content-list">
+              <li class="footer__content-title">Help</li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Customer Support</a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Delivery Details</a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Terms & Conditions</a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+            <ul class="footer__content-list">
+              <li class="footer__content-title">FAQ</li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Account</a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Manage Deliveries</a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Orders</a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Payments</a>
+              </li>
+            </ul>
+            <ul class="footer__content-list">
+              <li class="footer__content-title">Resources</li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Free eBooks</a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#"
+                  >Development Tutorial</a
+                >
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">How to - Blog</a>
+              </li>
+              <li class="footer__content-item">
+                <a class="footer__content-link" href="#">Youtube Playlist</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer__bottom">
           <p class="footer__bottom-copy">
@@ -666,6 +718,7 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
